@@ -25,7 +25,7 @@ export function CountdownProvider({ children }: CountdownProviderProps) {
   const [isActive, setIsActive] = useState(false)
   const [hasFinished, setHasFinished] = useState(false)
 
-  const minutes = Math.floor(time / 60) // arredonda para baixo
+  const minutes = Math.floor(time / 60)
   const seconds = time % 60
 
   function startCountdown() {
